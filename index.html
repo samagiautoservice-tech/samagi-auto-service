@@ -509,48 +509,24 @@ Full Interiol Cleaning and full Vehicles Washing with experienced technician.
 
 <input type="text" id="vehicle" placeholder="Vehicle Model" required>
 
-</form>
-
-<script>
-function sendToWhatsApp() {
-
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
-let vehicle = document.getElementById("vehicle").value;
-   
-let message =
-"Booking Request:%0A" +
-"Name: " + name + "%0A" +
-"Phone: " + phone + "%0A" +
-"Vehicle: " + vehicle;
-
-let url =
-"https://wa.me/94740873888?text=" + message;
-
-window.open(url, "_blank");
-}
-</script>    
-
-<select required>
-
+<select id="service" required>
 <option value="">Select Service</option>
 <option>Oil Change</option>
 <option>Head Light Polish</option>
 <option>Full Service</option>
-<option>Interiol Cleaning</option>
+<option>Interior Cleaning</option>
 <option>Body Polish</option>
 <option>Body Wash</option>
 <option>Normal Wax</option>
 <option>Machine Wax</option>
-
 </select>
 
-<input type="date" required>
+<input type="date" id="date" required>
 
-<textarea rows="4" placeholder="Additional Notes"></textarea>
+<textarea id="notes" rows="4" placeholder="Additional Notes"></textarea>
 
-<button type="button" onclick="sendToWhatsApp()">
-    Submit Booking
+<button type="submit">
+Submit Booking
 </button>
 
 </form>
