@@ -617,25 +617,25 @@ document.getElementById("bookingForm").reset();
 <script>
 function sendToWhatsApp() {
 
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
-    let vehicle = document.getElementById("vehicle").value;
-    let service = document.getElementById("service").value;
-    let date = document.getElementById("date").value;
-    let notes = document.getElementById("notes").value;
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let vehicle = document.getElementById("vehicle").value;
+let service = document.getElementById("service").value;
+let date = document.getElementById("date").value;
+let notes = document.getElementById("notes").value;
 
-    let message =
-    "Booking Request:%0A%0A" +
-    "Name: " + name + "%0A" +
-    "Phone: " + phone + "%0A" +
-    "Vehicle: " + vehicle + "%0A" +
-    "Service: " + service + "%0A" +
-    "Date: " + date + "%0A" +
-    "Notes: " + notes;
+let message =
+ "Booking Request:%0A%0A" +
+ "Name: " + name + "%0A" +
+ "Phone: " + phone + "%0A" +
+"Vehicle: " + vehicle + "%0A" +
+"Service: " + service + "%0A" +
+"Date: " + date + "%0A" +
+"Notes: " + notes;
 
-    let url = "https://wa.me/94740873888?text=" + message;
+let url = "https://wa.me/94740873888?text=" + message;
 
-    window.open(url, "_blank");
+window.open(url, "_blank");
 }
 </script>
 </body>
