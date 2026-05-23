@@ -501,21 +501,54 @@ Full Interiol Cleaning and full Vehicles Washing with experienced technician.
 <h2>Book Appointment</h2>
 
 <div class="booking-form">
+<form onsubmit="sendToWhatsApp(); return false;">
+
+<input type="text" id="name" placeholder="Customer Name" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<input type="text" id="vehicle" placeholder="Vehicle Model" required>
     
+<input type="text" id="vehicle" placeholder="Select Service" required>
+    
+<input type="text" id="vehicle" placeholder="dd/mm/yyyy" required>
+
+<input type="text" id="vehicle" placeholder="Additional Note" required>
+<button type="submit">
+Book on WhatsApp
+</button>
+
+</form>
+
+<script>
+function sendToWhatsApp() {
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let vehicle = document.getElementById("vehicle").value;
+let vehicle = document.getElementById("service").value;
+let vehicle = document.getElementById("date").value;
+let vehicle = document.getElementById("note").value;
+    
+let message =
+"Booking Request:%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A" +
+"Vehicle: " + vehicle;
+"Service: " + service;
+"Date: " + date;
+"Note: " + note;
+let url =
+"https://wa.me/94740873888?text=" + message;
+
+window.open(url, "_blank");
+}
+</script>    
 <a 
 href="https://wa.me/94740873888?text=Hello%20Samagi%20Auto%20Service,%20I%20want%20to%20book%20an%20appointment" target="_blank">
   <button style="padding:15px 30px; background:red; color:white; border:none; border-radius:5px;">
       Book on WhatsApp
    </button>
-</a>
-    
-<form id="bookingForm">
-      
-<input type="text" placeholder="Customer Name" required>
-
-<input type="tel" placeholder="Phone Number" required>
-
-<input type="text" placeholder="Vehicle Model" required>
 
 <select required>
 
