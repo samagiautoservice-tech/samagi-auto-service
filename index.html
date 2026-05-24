@@ -507,7 +507,9 @@ Full Interiol Cleaning and full Vehicles Washing with experienced technician.
 
 <input type="tel" id="phone" placeholder="Phone Number" required>
 
-<input type="text" id="vehicle" placeholder="Vehicle Model" required>
+<input type="text" id="vehicle" placeholder="Address" required>
+
+ <input type="text" id="vehicle" placeholder="Vehicle Model" required>   
 
 <select id="service" required>
 <option value="">Select Service</option>
@@ -595,6 +597,7 @@ function sendToWhatsApp() {
 
 let name = document.getElementById("name").value;
 let phone = document.getElementById("phone").value;
+let phone = document.getElementById("address").value;    
 let vehicle = document.getElementById("vehicle").value;
 let service = document.getElementById("service").value;
 let date = document.getElementById("date").value;
@@ -604,6 +607,7 @@ let message =
  "Booking Request:%0A%0A" +
  "Name: " + name + "%0A" +
  "Phone: " + phone + "%0A" +
+ "Address: " + address + "%0A" +   
 "Vehicle: " + vehicle + "%0A" +
 "Service: " + service + "%0A" +
 "Date: " + date + "%0A" +
