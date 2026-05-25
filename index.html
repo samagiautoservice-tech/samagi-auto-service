@@ -5,8 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Samagi Auto Service</title>
+
 <meta name="google-site-verification" content="qSmBIv5w_oDdiQXlhJlG4PFHG7tr2M3iVDJsedSlffg" />
+
 <meta name="description" content="Samagi Auto Service Buttala - Professional vehicle service and oil change services in Buttala, Sri Lanka.">
+
 <style>
 
 *{
@@ -16,17 +19,17 @@
     font-family:Arial, sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     background:#f4f4f4;
     color:#333;
 }
 
 /* HEADER */
-header{
-    /* background:#111;
-       color:black;
-       padding:20px 0; */
-}
+
 .top-bar{
     background:#111;
     color:white;
@@ -34,42 +37,52 @@ header{
     display:flex;
     justify-content:flex-end;
     gap:40px;
-    font-size:24px;
+    font-size:16px;
+    flex-wrap:wrap;
 }
 
 .container{
-    width:100%;
+    width:90%;
     margin:auto;
+}
+
+header{
+    background:white;
+    padding:20px 0;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 .logo{
     font-size:32px;
     font-weight:bold;
     color:#ff0000;
+    margin-bottom:15px;
 }
 
 nav{
-    margin-top:15px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
 }
 
 nav a{
-    color:red;
+    color:#111;
     text-decoration:none;
-    margin-right:20px;
     font-size:18px;
+    font-weight:bold;
 }
 
 nav a:hover{
     color:#ff0000;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
     background:url('https://i.postimg.cc/HkKvbbw4/Whats-App-Image-2026-05-23-at-13-17-59.jpg');
-    background-repeat: no-repeat; 
-    background-position: center center; 
-    background-size: 100% 100%; 
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
     height:600px;
     display:flex;
     align-items:center;
@@ -85,12 +98,12 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size:30px;
+    font-size:42px;
 }
 
 .hero p{
     margin-top:15px;
-    font-size:15px;
+    font-size:20px;
 }
 
 .hero button{
@@ -107,6 +120,9 @@ nav a:hover{
 .hero button:hover{
     background:#cc0000;
 }
+
+/* FEATURES */
+
 .features{
     background:#111;
     color:white;
@@ -119,13 +135,14 @@ nav a:hover{
 .feature-box{
     text-align:center;
     width:220px;
+    margin:10px;
 }
 
 .feature-box h3{
-    color:white;
     margin-bottom:10px;
 }
-/* ABOUT */
+
+/* SECTION */
 
 .section{
     padding:60px 0;
@@ -137,6 +154,8 @@ nav a:hover{
     color:#d40000;
     font-size:36px;
 }
+
+/* ABOUT */
 
 .about{
     text-align:center;
@@ -218,64 +237,43 @@ nav a:hover{
     background:#b00000;
 }
 
-.success{
-    display:none;
-    background:#d4edda;
-    color:#155724;
-    padding:15px;
-    margin-top:20px;
-    border-radius:5px;
+/* CONTACT */
+
+.contact{
     text-align:center;
+    line-height:2;
+    font-size:18px;
 }
 
-<!-- CONTACT -->
+.social-buttons{
+    margin-top:20px;
+}
 
-<section class="section" id="contact">
+.social-buttons a{
+    display:inline-block;
+    padding:12px 20px;
+    margin:10px;
+    background:#1877f2;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:16px;
+}
 
-<div class="container">
+.social-buttons a:last-child{
+    background:#25d366;
+}
 
-<h2>Contact Us</h2>
+.social-buttons a:hover{
+    opacity:0.9;
+}
 
-<div class="contact">
-
-<p>📍 Badalkumbura Road, Buttala, Sri Lanka</p>
-
-<p>📞 +94 552273888</p>
-
-<p>📧 samagiautoservice@gmail.com</p>
-
-<p>🕒 Monday - Sunday | 7.30 AM - 5.30 PM</p>
-
-<div class="social-buttons">
-
-<a href="https://www.facebook.com/share/1EpnbXETn7/" target="_blank">
-Facebook Page
-</a>
-
-<a href="https://wa.me/94740873888" target="_blank">
-WhatsApp Chat
-</a>
-
-</div>
-
-<div class="map-container">
-
-<iframe
-src="https://maps.app.goo.gl/2L6kdPMfXyUsofgr7?g_st=aw"
-width="100%"
-height="350"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
+.map-container{
+    margin-top:30px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
 
 /* FOOTER */
 
@@ -287,94 +285,79 @@ footer{
     margin-top:40px;
 }
 
+/* WHATSAPP FLOAT */
+
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    font-size:32px;
+    line-height:60px;
+    text-decoration:none;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    z-index:1000;
+}
+
+.whatsapp-float:hover{
+    background:#1ebe5d;
+}
+
 /* MOBILE */
 
 @media(max-width:768px){
 
+.hero{
+    height:500px;
+}
+
 .hero h1{
-    font-size:35px;
+    font-size:30px;
 }
 
 .hero p{
-    font-size:18px;
+    font-size:16px;
+}
+
+.top-bar{
+    justify-content:center;
+    text-align:center;
+    font-size:14px;
+}
+
+nav{
+    justify-content:center;
+}
+
 }
 
 </style>
 </head>
-<!-- WHATSAPP FLOATING BUTTON -->
+
+<body>
+
+<!-- WHATSAPP FLOAT BUTTON -->
 
 <a href="https://wa.me/94740873888" class="whatsapp-float" target="_blank">
 💬
 </a>
 
-<style>
+<!-- TOP BAR -->
 
-html{
-scroll-behavior:smooth;
-}
-
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-width:60px;
-height:60px;
-background:#25d366;
-color:white;
-border-radius:50%;
-text-align:center;
-font-size:32px;
-line-height:60px;
-text-decoration:none;
-box-shadow:0 0 10px rgba(0,0,0,0.3);
-z-index:1000;
-}
-
-.whatsapp-float:hover{
-background:#1ebe5d;
-}
-
-.social-buttons{
-margin-top:20px;
-}
-
-.social-buttons a{
-display:inline-block;
-padding:12px 20px;
-margin:10px;
-background:#1877f2;
-color:white;
-text-decoration:none;
-border-radius:5px;
-font-size:16px;
-}
-
-.social-buttons a:hover{
-opacity:0.9;
-}
-
-.map-container{
-margin-top:30px;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
-
-</style>
-<body>
+<div class="top-bar">
+    <span>📞 +94 552273888</span>
+    <span>📍 Badalkumbura Road, Buttala, Sri Lanka</span>
+</div>
 
 <!-- HEADER -->
 
 <header>
 
-<header>
-
-   <div class="top-bar">
-      <span>📞 +94 552273888</span>
-      <span>📍 Badalkumbura Road, Buttala, Sri Lanka</span>
-   </div>
-<header>
-    
 <div class="container">
 
 <div class="logo">Samagi Auto Service</div>
@@ -389,6 +372,7 @@ box-shadow:0 0 10px rgba(0,0,0,0.2);
 </nav>
 
 </div>
+
 </header>
 
 <!-- HERO -->
@@ -399,7 +383,7 @@ box-shadow:0 0 10px rgba(0,0,0,0.2);
 
 <h1>WELCOME TO SAMAGI AUTO SERVICE</h1>
 
-<p>All Kind Of Trusted Service in Sri Lanka</p>
+<p>All Kind Of Trusted Vehicle Services In Sri Lanka</p>
 
 <button onclick="document.getElementById('booking').scrollIntoView();">
 Book Appointment
@@ -419,8 +403,9 @@ Book Appointment
 
 <div class="about">
 Samagi Auto Service provides professional Body Wash,
-Oil Change,Full Body Polish, Head Light Polish,Normal Wax,Machine Wax,
-Full Interiol Cleaning and full Vehicles Washing with experienced technician.
+Oil Change, Full Body Polish, Head Light Polish,
+Normal Wax, Machine Wax, Full Interior Cleaning
+and Full Vehicle Washing with experienced technicians.
 </div>
 
 </div>
@@ -449,17 +434,17 @@ Full Interiol Cleaning and full Vehicles Washing with experienced technician.
 
 <div class="service-box">
 <h3>WAX</h3>
-<p>Normal wax & Machine Wax.</p>
+<p>Normal Wax & Machine Wax.</p>
 </div>
 
 <div class="service-box">
 <h3>CLEANING</h3>
-<p>Full Interiol Cleaning.</p>
+<p>Full Interior Cleaning.</p>
 </div>
 
 <div class="service-box">
 <h3>WASHING</h3>
-<p>Body wash & Under Wash.</p>
+<p>Body Wash & Under Wash.</p>
 </div>
 
 </div>
@@ -498,15 +483,15 @@ Full Interiol Cleaning and full Vehicles Washing with experienced technician.
 
 <h2>Book Appointment</h2>
 
-<div class="booking-form">
+<form class="booking-form" id="bookingForm">
 
 <input type="text" id="name" placeholder="Customer Name" required>
 
 <input type="tel" id="phone" placeholder="Phone Number" required>
 
-<input type="text" id="vehicle" placeholder="Address" required>
+<input type="text" id="address" placeholder="Address" required>
 
- <input type="text" id="vehicle" placeholder="Vehicle Model" required>   
+<input type="text" id="vehicle" placeholder="Vehicle Model" required>
 
 <select id="service" required>
 <option value="">Select Service</option>
@@ -529,12 +514,6 @@ Book On WhatsApp
 </button>
 
 </form>
-    
-</button>
-    
-<div class="success" id="successMessage">
-Booking Submitted Successfully!
-</div>
 
 </div>
 
@@ -552,13 +531,38 @@ Booking Submitted Successfully!
 
 <div class="contact">
 
-<p>📍 Badalkumbura Road Buttala, Sri Lanka</p>
+<p>📍 Badalkumbura Road, Buttala, Sri Lanka</p>
 
 <p>📞 +94 552273888</p>
 
 <p>📧 samagiautoservice@gmail.com</p>
 
-<p>🕒 Open: Monday - Sunday | 7.30 AM - 5.30 PM</p>
+<p>🕒 Monday - Sunday | 7.30 AM - 5.30 PM</p>
+
+<div class="social-buttons">
+
+<a href="https://www.facebook.com/share/1EpnbXETn7/" target="_blank">
+Facebook Page
+</a>
+
+<a href="https://wa.me/94740873888" target="_blank">
+WhatsApp Chat
+</a>
+
+</div>
+
+<div class="map-container">
+
+<iframe
+src="https://www.google.com/maps?q=Buttala,Sri%20Lanka&output=embed"
+width="100%"
+height="350"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
 
 </div>
 
@@ -568,44 +572,31 @@ Booking Submitted Successfully!
 
 <!-- FOOTER -->
 
-</footer>
-    
+<footer>
+
 <p>© 2026 Samagi Auto Service | All Rights Reserved</p>
 
 </footer>
 
+<!-- SCRIPT -->
+
 <script>
 
-document.getElementById("bookingForm")
-.addEventListener("submit", function(e){
-
-e.preventDefault();
-
-document.getElementById("successMessage")
-.style.display = "block";
-
-document.getElementById("bookingForm").reset();
-
-});
-
-</script>
-<script>
-    
 function sendToWhatsApp() {
 
 let name = document.getElementById("name").value;
 let phone = document.getElementById("phone").value;
-let phone = document.getElementById("address").value;    
+let address = document.getElementById("address").value;
 let vehicle = document.getElementById("vehicle").value;
 let service = document.getElementById("service").value;
 let date = document.getElementById("date").value;
 let notes = document.getElementById("notes").value;
 
 let message =
- "Booking Request:%0A%0A" +
- "Name: " + name + "%0A" +
- "Phone: " + phone + "%0A" +
- "Address: " + address + "%0A" +   
+"Booking Request:%0A%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A" +
+"Address: " + address + "%0A" +
 "Vehicle: " + vehicle + "%0A" +
 "Service: " + service + "%0A" +
 "Date: " + date + "%0A" +
@@ -613,8 +604,11 @@ let message =
 
 let url = "https://wa.me/94740873888?text=" + message;
 
-window.open(url,"_blank");
+window.open(url, "_blank");
+
 }
+
 </script>
+
 </body>
 </html>
